@@ -1,2 +1,2 @@
 # yealink_streamdeck_ext
-Yealink UC864 Streamdeck Extension
+Yealink UC86 Streamdeck Extension
