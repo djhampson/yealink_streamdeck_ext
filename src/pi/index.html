@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Yealink UC86 Camera Control Settings</title>
+  <style>
+    body {
+      margin: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #d8d8d8;
+      background-color: #2d2d2d;
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .sdpi-item {
+      margin-bottom: 15px;
+    }
+
+    .sdpi-item-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #9d9d9d;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #3a3a3a;
+      background-color: #1a1a1a;
+      color: #d8d8d8;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 12px;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #0e6dc4;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #0e6dc4;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    button:hover {
+      background-color: #0d5fa3;
+    }
+
+    button:active {
+      background-color: #0c5490;
+    }
+
+    .info-text {
+      font-size: 11px;
+      color: #7a7a7a;
+      margin-top: 3px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #d8d8d8;
+      margin: 20px 0 10px 0;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #3a3a3a;
+    }
+
+    .status-message {
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 3px;
+      font-size: 11px;
+      display: none;
+    }
+
+    .status-success {
+      background-color: rgba(40, 167, 69, 0.2);
+      border: 1px solid rgba(40, 167, 69, 0.4);
+      color: #7edb8e;
+    }
+
+    .status-error {
+      background-color: rgba(220, 53, 69, 0.2);
+      border: 1px solid rgba(220, 53, 69, 0.4);
+      color: #f28b8b;
+    }
+
+    .preset-only {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section-title">Camera Configuration</div>
+
+    <div class="sdpi-item">
+      <label class="sdpi-item-label" for="ipAddress">Camera IP Address</label>
+      <input type="text" id="ipAddress" placeholder="e.g., 192.168.1.100">
+      <div class="info-text">IP address or hostname of your Yealink UC86 camera</div>
+    </div>
+
+    <div class="sdpi-item">
+      <label class="sdpi-item-label" for="username">Username</label>
+      <input type="text" id="username" placeholder="admin" value="admin">
+    </div>
+
+    <div class="sdpi-item">
+      <label class="sdpi-item-label" for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <div class="info-text">Credentials are stored securely by Stream Deck</div>
+    </div>
+
+    <div class="sdpi-item">
+      <button id="testConnection">Test Connection</button>
+      <div id="connectionStatus" class="status-message"></div>
+    </div>
+
+    <div class="section-title preset-only">Preset Settings</div>
+
+    <div class="sdpi-item preset-only">
+      <label class="sdpi-item-label" for="presetNumber">Preset Number</label>
+      <input type="number" id="presetNumber" min="1" max="10" value="1">
+      <div class="info-text">Choose a preset number (1-10) for this button</div>
+    </div>
+  </div>
+
+  <script src="inspector.js"></script>
+</body>
+</html>

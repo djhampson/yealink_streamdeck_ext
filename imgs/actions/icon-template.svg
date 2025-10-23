@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144" height="144" viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <!-- Template for action icons - 144x144 for @2x, will be scaled to 72x72 for @1x -->
+  <rect width="144" height="144" fill="#2d2d2d" rx="20"/>
+  <g transform="translate(72, 72)">
+    <!-- Icon content goes here, centered at 0,0 -->
+  </g>
+</svg>

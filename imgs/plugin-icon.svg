@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144" height="144" viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yealink Camera Control Plugin Icon -->
+  <rect width="144" height="144" fill="#2d2d2d" rx="20"/>
+
+  <!-- Camera icon -->
+  <g transform="translate(72, 72)">
+    <!-- Camera body -->
+    <rect x="-30" y="-15" width="60" height="40" fill="#ffffff" rx="4"/>
+    <rect x="-35" y="-10" width="10" height="10" fill="#ffffff" rx="2"/>
+
+    <!-- Lens -->
+    <circle cx="0" cy="5" r="12" fill="#2d2d2d"/>
+    <circle cx="0" cy="5" r="8" fill="#4a9eff"/>
+
+    <!-- Control arrows -->
+    <g transform="translate(0, -35)" fill="#4a9eff">
+      <polygon points="0,-8 -6,-2 6,-2"/>
+    </g>
+  </g>
+
+  <!-- Plugin name hint -->
+  <text x="72" y="130" font-family="Arial, sans-serif" font-size="12" fill="#999" text-anchor="middle">Yealink</text>
+</svg>

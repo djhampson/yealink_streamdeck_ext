@@ -1,0 +1,121 @@
+{
+  "SDKVersion": 2,
+  "Author": "Your Name",
+  "CodePath": "dist/plugin/index.js",
+  "Description": "Control Yealink UC86 camera with preset management, PTZ controls, and zoom",
+  "Name": "Yealink UC86 Camera Control",
+  "Icon": "imgs/plugin-icon",
+  "URL": "https://github.com/yourusername/yealink-streamdeck-ext",
+  "Version": "1.0.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.14"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "5.0"
+  },
+  "Actions": [
+    {
+      "Icon": "imgs/actions/move-left",
+      "Name": "Camera Move Left",
+      "States": [
+        {
+          "Image": "imgs/actions/move-left"
+        }
+      ],
+      "Tooltip": "Move camera left",
+      "UUID": "com.yealink.uc86-camera-control.move-left",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/move-right",
+      "Name": "Camera Move Right",
+      "States": [
+        {
+          "Image": "imgs/actions/move-right"
+        }
+      ],
+      "Tooltip": "Move camera right",
+      "UUID": "com.yealink.uc86-camera-control.move-right",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/move-up",
+      "Name": "Camera Move Up",
+      "States": [
+        {
+          "Image": "imgs/actions/move-up"
+        }
+      ],
+      "Tooltip": "Move camera up",
+      "UUID": "com.yealink.uc86-camera-control.move-up",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/move-down",
+      "Name": "Camera Move Down",
+      "States": [
+        {
+          "Image": "imgs/actions/move-down"
+        }
+      ],
+      "Tooltip": "Move camera down",
+      "UUID": "com.yealink.uc86-camera-control.move-down",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/zoom-in",
+      "Name": "Camera Zoom In",
+      "States": [
+        {
+          "Image": "imgs/actions/zoom-in"
+        }
+      ],
+      "Tooltip": "Zoom camera in",
+      "UUID": "com.yealink.uc86-camera-control.zoom-in",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/zoom-out",
+      "Name": "Camera Zoom Out",
+      "States": [
+        {
+          "Image": "imgs/actions/zoom-out"
+        }
+      ],
+      "Tooltip": "Zoom camera out",
+      "UUID": "com.yealink.uc86-camera-control.zoom-out",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/set-preset",
+      "Name": "Set Camera Preset",
+      "States": [
+        {
+          "Image": "imgs/actions/set-preset"
+        }
+      ],
+      "Tooltip": "Save current camera position as preset",
+      "UUID": "com.yealink.uc86-camera-control.set-preset",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    },
+    {
+      "Icon": "imgs/actions/recall-preset",
+      "Name": "Recall Camera Preset",
+      "States": [
+        {
+          "Image": "imgs/actions/recall-preset"
+        }
+      ],
+      "Tooltip": "Recall saved camera preset",
+      "UUID": "com.yealink.uc86-camera-control.recall-preset",
+      "PropertyInspectorPath": "dist/pi/index.html"
+    }
+  ]
+}
